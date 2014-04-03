@@ -21,8 +21,5 @@
 //
 //User defined macros goes here
 //
-#define TRUE true
-#define FALSE false
 #define MAXLEN 1024
-#define 
 #endif
