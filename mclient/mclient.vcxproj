@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4B89AD9A-379B-4F5B-97C8-51E52DDC72B6}</ProjectGuid>
+    <RootNamespace>mclient</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="mclient.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mclient.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="anchor.png" />
+    <None Include="aperture.png" />
+    <None Include="appIcon.ico" />
+    <None Include="arrow-down.png" />
+    <None Include="arrow-up.png" />
+    <None Include="art.png" />
+    <None Include="barchart.png" />
+    <None Include="batteryfull.png" />
+    <None Include="batterylow.png" />
+    <None Include="bike.png" />
+    <None Include="biker.png" />
+    <None Include="bikewheel.png" />
+    <None Include="blimp.png" />
+    <None Include="bolt.png" />
+    <None Include="bomb.png" />
+    <None Include="booklet.png" />
+    <None Include="bookshelf.png" />
+    <None Include="briefcase.png" />
+    <None Include="brightness.png" />
+    <None Include="browser.png" />
+    <None Include="brush-pencil.png" />
+    <None Include="calculator.png" />
+    <None Include="calendar.png" />
+    <None Include="camera.png" />
+    <None Include="car.png" />
+    <None Include="cart.png" />
+    <None Include="carwheel.png" />
+    <None Include="caution.png" />
+    <None Include="chat.png" />
+    <None Include="check.png" />
+    <None Include="circlecompass.png" />
+    <None Include="clapboard.png" />
+    <None Include="clipboard.png" />
+    <None Include="clock.png" />
+    <None Include="cloud.png" />
+    <None Include="cmyk.png" />
+    <None Include="colorwheel.png" />
+    <None Include="compass.png" />
+    <None Include="compose.png" />
+    <None Include="computer.png" />
+    <None Include="cone.png" />
+    <None Include="contacts.png" />
+    <None Include="contrast.png" />
+    <None Include="countdown.png" />
+    <None Include="creditcard.png" />
+    <None Include="crop.png" />
+    <None Include="crossroads.png" />
+    <None Include="cruise.png" />
+    <None Include="cursor.png" />
+    <None Include="denied.png" />
+    <None Include="dev.png" />
+    <None Include="die.png" />
+    <None Include="document.png" />
+    <None Include="dolly.png" />
+    <None Include="door.png" />
+    <None Include="download.png" />
+    <None Include="easel.png" />
+    <None Include="email.png" />
+    <None Include="emailIcon.jpeg" />
+    <None Include="eye.png" />
+    <None Include="eyedropper.png" />
+    <None Include="fashion.png" />
+    <None Include="filmreel.png" />
+    <None Include="filmroll.png" />
+    <None Include="flag.png" />
+    <None Include="flame.png" />
+    <None Include="flash.png" />
+    <None Include="flower.png" />
+    <None Include="focus.png" />
+    <None Include="folder.png" />
+    <None Include="frames.png" />
+    <None Include="gamecontroller.png" />
+    <None Include="gas.png" />
+    <None Include="gear.png" />
+    <None Include="genius.png" />
+    <None Include="global.png" />
+    <None Include="globe.png" />
+    <None Include="gps.png" />
+    <None Include="hazard.png" />
+    <None Include="heart.png" />
+    <None Include="helicopter.png" />
+    <None Include="hotair.png" />
+    <None Include="hourglass.png" />
+    <None Include="image.png" />
+    <None Include="interstate.png" />
+    <None Include="key.png" />
+    <None Include="keyboard.png" />
+    <None Include="lens.png" />
+    <None Include="lightbulb.png" />
+    <None Include="loading.png" />
+    <None Include="location.png" />
+    <None Include="locked.png" />
+    <None Include="magicwand.png" />
+    <None Include="magnifyingglass.png" />
+    <None Include="mail.png" />
+    <None Include="map.png" />
+    <None Include="megaphone.png" />
+    <None Include="megaphone2.png" />
+    <None Include="memorycard.png" />
+    <None Include="merge.png" />
+    <None Include="mic.png" />
+    <None Include="microphone.png" />
+    <None Include="money.png" />
+    <None Include="motorcycle.png" />
+    <None Include="music.png" />
+    <None Include="news.png" />
+    <None Include="paintbrush.png" />
+    <None Include="paintbrush2.png" />
+    <None Include="paintcan.png" />
+    <None Include="paintroller.png" />
+    <None Include="parachute.png" />
+    <None Include="pencil.png" />
+    <None Include="phone.png" />
+    <None Include="pie-chart.png" />
+    <None Include="pin.png" />
+    <None Include="pin2.png" />
+    <None Include="plane.png" />
+    <None Include="play.png" />
+    <None Include="plugin.png" />
+    <None Include="polaroid.png" />
+    <None Include="polaroidcamera.png" />
+    <None Include="polaroids.png" />
+    <None Include="power.png" />
+    <None Include="present.png" />
+    <None Include="profle.png" />
+    <None Include="quote.png" />
+    <None Include="racingflags.png" />
+    <None Include="radio.png" />
+    <None Include="radiotower.png" />
+    <None Include="rainbow.png" />
+    <None Include="recycle.png" />
+    <None Include="rgb.png" />
+    <None Include="ribbon.png" />
+    <None Include="roadblock.png" />
+    <None Include="rocket.png" />
+    <None Include="rulertriangle.png" />
+    <None Include="running.png" />
+    <None Include="sailboat.png" />
+    <None Include="schooolbus.png" />
+    <None Include="scissors.png" />
+    <None Include="scooter.png" />
+    <None Include="security.png" />
+    <None Include="selftimer.png" />
+    <None Include="settings.png" />
+    <None Include="shipwheel.png" />
+    <None Include="shoeprints.png" />
+    <None Include="shop.png" />
+    <None Include="skateboard.png" />
+    <None Include="slr.png" />
+    <None Include="smartphone.png" />
+    <None Include="spaceshuttle.png" />
+    <None Include="speaker.png" />
+    <None Include="speedometer.png" />
+    <None Include="spraypaint.png" />
+    <None Include="stack.png" />
+    <None Include="star.png" />
+    <None Include="steeringwheel.png" />
+    <None Include="stop.png" />
+    <None Include="sub.png" />
+    <None Include="submarine.png" />
+    <None Include="support.png" />
+    <None Include="swatches.png" />
+    <None Include="tablet.png" />
+    <None Include="takeoff.png" />
+    <None Include="target.png" />
+    <None Include="taxi.png" />
+    <None Include="toolbox.png" />
+    <None Include="tools.png" />
+    <None Include="tractor.png" />
+    <None Include="traffic.png" />
+    <None Include="train.png" />
+    <None Include="travelerbag.png" />
+    <None Include="trends.png" />
+    <None Include="tripod.png" />
+    <None Include="trophy.png" />
+    <None Include="truck.png" />
+    <None Include="tv.png" />
+    <None Include="typography.png" />
+    <None Include="ufo.png" />
+    <None Include="umbrella.png" />
+    <None Include="unicycle.png" />
+    <None Include="unlocked.png" />
+    <None Include="upload.png" />
+    <None Include="video.png" />
+    <None Include="videocameraclassic.png" />
+    <None Include="videocameracompact.png" />
+    <None Include="volume.png" />
+    <None Include="water.png" />
+    <None Include="weather.png" />
+    <None Include="windsock.png" />
+    <None Include="windy.png" />
+    <None Include="x.png" />
+    <None Include="zoomin.png" />
+    <None Include="zoomout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,26 @@
+﻿Build started 4/4/2014 8:19:09 AM.
+     1>Project "D:\Repos\mclient\mclient\mclient.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\mclient.lastbuildstate".
+       InitializeBuildStatus:
+         Touching "Release\mclient.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt mclient.cpp
+         mclient.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\resource.res" resource.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Repos\mclient\Release\mclient.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\mclient.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Repos\mclient\Release\mclient.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Repos\mclient\Release\mclient.lib" /MACHINE:X86 Release\resource.res
+         Release\mclient.obj
+         Generating code
+     1>d:\repos\mclient\mclient\mclient.cpp(95): warning C4700: uninitialized local variable 'lpwsErrorStr' used
+     1>d:\repos\mclient\mclient\mclient.cpp(96): warning C4700: uninitialized local variable 'lpwsErrorTitle' used
+     1>d:\repos\mclient\mclient\mclient.cpp(103): warning C4700: uninitialized local variable 'lpwsWindowTitle' used
+     1>d:\repos\mclient\mclient\mclient.cpp(115): warning C4700: uninitialized local variable 'lpwsWindowCreationFailError' used
+         Finished generating code
+     1>LINK : fatal error LNK1123: failure during conversion to COFF: file invalid or corrupt
+     1>Done Building Project "D:\Repos\mclient\mclient\mclient.vcxproj" (rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.52
