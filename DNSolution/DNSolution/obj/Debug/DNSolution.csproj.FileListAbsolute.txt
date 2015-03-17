@@ -1,0 +1,12 @@
+D:\mclient\DNSolution\DNSolution\bin\Debug\DNSolution.exe.config
+D:\mclient\DNSolution\DNSolution\bin\Debug\DNSolution.exe
+D:\mclient\DNSolution\DNSolution\bin\Debug\DNSolution.pdb
+D:\mclient\DNSolution\DNSolution\bin\Debug\MetroFramework.dll
+D:\mclient\DNSolution\DNSolution\bin\Debug\MetroFramework.Fonts.dll
+D:\mclient\DNSolution\DNSolution\obj\Debug\DNSolution.Properties.Resources.resources
+D:\mclient\DNSolution\DNSolution\obj\Debug\DNSolution.csproj.GenerateResource.Cache
+D:\mclient\DNSolution\DNSolution\obj\Debug\DNSolution.exe
+D:\mclient\DNSolution\DNSolution\obj\Debug\DNSolution.pdb
+D:\mclient\DNSolution\DNSolution\obj\Debug\DNSolution.bench.resources
+D:\mclient\DNSolution\DNSolution\bin\Debug\System.Windows.Forms.Ribbon35.dll
+D:\mclient\DNSolution\DNSolution\bin\Debug\System.Windows.Forms.Ribbon35.pdb
