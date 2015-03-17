@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(bench));
             this.metroTabControlMClinet = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPageCompose = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPageInbox = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPageProfile = new MetroFramework.Controls.MetroTabPage();
             this.splitContainerComposeNew = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanelTopComposeNew = new System.Windows.Forms.TableLayoutPanel();
             this.metroLabelSubject = new MetroFramework.Controls.MetroLabel();
@@ -46,20 +44,17 @@
             this.metroLabelMailFrom = new MetroFramework.Controls.MetroLabel();
             this.metroTextBoxMailFrom = new MetroFramework.Controls.MetroTextBox();
             this.toolStripComposeNew = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.richTextBoxComposeContent = new System.Windows.Forms.RichTextBox();
-            this.metroTileProfile = new MetroFramework.Controls.MetroTile();
-            this.fontDialogComposeNew = new System.Windows.Forms.FontDialog();
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.printToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.cutToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.copyToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.pasteToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonLeftJustify = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonCenterJustify = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonRightJustify = new System.Windows.Forms.ToolStripButton();
@@ -70,8 +65,22 @@
             this.toolStripButtonOrderedList = new System.Windows.Forms.ToolStripButton();
             this.metroButtonAttach = new MetroFramework.Controls.MetroButton();
             this.metroTextBoxAttachments = new MetroFramework.Controls.MetroTextBox();
+            this.richTextBoxComposeContent = new System.Windows.Forms.RichTextBox();
+            this.metroTabPageFolders = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabPageProfile = new MetroFramework.Controls.MetroTabPage();
+            this.metroTileProfile = new MetroFramework.Controls.MetroTile();
+            this.fontDialogComposeNew = new System.Windows.Forms.FontDialog();
             this.openFileDialogAttachments = new System.Windows.Forms.OpenFileDialog();
             this.printDialogUnderComposeNew = new System.Windows.Forms.PrintDialog();
+            this.tableLayoutPanelFolders = new System.Windows.Forms.TableLayoutPanel();
+            this.checkedListBoxFolderContent = new System.Windows.Forms.CheckedListBox();
+            this.webBrowserMailContent = new System.Windows.Forms.WebBrowser();
+            this.tableLayoutPanelSidePan = new System.Windows.Forms.TableLayoutPanel();
+            this.metroLabelFolder = new MetroFramework.Controls.MetroLabel();
+            this.metroComboBoxFolder = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabelFetchCount = new MetroFramework.Controls.MetroLabel();
+            this.metroComboBoxShowCount = new MetroFramework.Controls.MetroComboBox();
+            this.metroButtonFolderRefresh = new MetroFramework.Controls.MetroButton();
             this.metroTabControlMClinet.SuspendLayout();
             this.metroTabPageCompose.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerComposeNew)).BeginInit();
@@ -80,18 +89,21 @@
             this.splitContainerComposeNew.SuspendLayout();
             this.tableLayoutPanelTopComposeNew.SuspendLayout();
             this.toolStripComposeNew.SuspendLayout();
+            this.metroTabPageFolders.SuspendLayout();
+            this.tableLayoutPanelFolders.SuspendLayout();
+            this.tableLayoutPanelSidePan.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTabControlMClinet
             // 
             this.metroTabControlMClinet.Controls.Add(this.metroTabPageCompose);
-            this.metroTabControlMClinet.Controls.Add(this.metroTabPageInbox);
+            this.metroTabControlMClinet.Controls.Add(this.metroTabPageFolders);
             this.metroTabControlMClinet.Controls.Add(this.metroTabPageProfile);
             this.metroTabControlMClinet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControlMClinet.Location = new System.Drawing.Point(20, 60);
             this.metroTabControlMClinet.Name = "metroTabControlMClinet";
-            this.metroTabControlMClinet.SelectedIndex = 0;
-            this.metroTabControlMClinet.Size = new System.Drawing.Size(715, 451);
+            this.metroTabControlMClinet.SelectedIndex = 1;
+            this.metroTabControlMClinet.Size = new System.Drawing.Size(439, 397);
             this.metroTabControlMClinet.TabIndex = 0;
             // 
             // metroTabPageCompose
@@ -100,32 +112,11 @@
             this.metroTabPageCompose.HorizontalScrollbarBarColor = true;
             this.metroTabPageCompose.Location = new System.Drawing.Point(4, 35);
             this.metroTabPageCompose.Name = "metroTabPageCompose";
-            this.metroTabPageCompose.Size = new System.Drawing.Size(707, 412);
+            this.metroTabPageCompose.Size = new System.Drawing.Size(498, 326);
             this.metroTabPageCompose.TabIndex = 0;
             this.metroTabPageCompose.Text = "Compose";
             this.metroTabPageCompose.ToolTipText = "Compose New Mail";
             this.metroTabPageCompose.VerticalScrollbarBarColor = true;
-            // 
-            // metroTabPageInbox
-            // 
-            this.metroTabPageInbox.HorizontalScrollbarBarColor = true;
-            this.metroTabPageInbox.Location = new System.Drawing.Point(4, 35);
-            this.metroTabPageInbox.Name = "metroTabPageInbox";
-            this.metroTabPageInbox.Size = new System.Drawing.Size(707, 412);
-            this.metroTabPageInbox.TabIndex = 1;
-            this.metroTabPageInbox.Text = "Inbox";
-            this.metroTabPageInbox.ToolTipText = "Inbox";
-            this.metroTabPageInbox.VerticalScrollbarBarColor = true;
-            // 
-            // metroTabPageProfile
-            // 
-            this.metroTabPageProfile.HorizontalScrollbarBarColor = true;
-            this.metroTabPageProfile.Location = new System.Drawing.Point(4, 35);
-            this.metroTabPageProfile.Name = "metroTabPageProfile";
-            this.metroTabPageProfile.Size = new System.Drawing.Size(707, 412);
-            this.metroTabPageProfile.TabIndex = 2;
-            this.metroTabPageProfile.Text = "Profile";
-            this.metroTabPageProfile.VerticalScrollbarBarColor = true;
             // 
             // splitContainerComposeNew
             // 
@@ -138,12 +129,13 @@
             // splitContainerComposeNew.Panel1
             // 
             this.splitContainerComposeNew.Panel1.Controls.Add(this.tableLayoutPanelTopComposeNew);
+            this.splitContainerComposeNew.Panel1MinSize = 200;
             // 
             // splitContainerComposeNew.Panel2
             // 
             this.splitContainerComposeNew.Panel2.Controls.Add(this.richTextBoxComposeContent);
-            this.splitContainerComposeNew.Size = new System.Drawing.Size(707, 412);
-            this.splitContainerComposeNew.SplitterDistance = 208;
+            this.splitContainerComposeNew.Size = new System.Drawing.Size(498, 326);
+            this.splitContainerComposeNew.SplitterDistance = 213;
             this.splitContainerComposeNew.TabIndex = 2;
             // 
             // tableLayoutPanelTopComposeNew
@@ -175,7 +167,7 @@
             this.tableLayoutPanelTopComposeNew.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelTopComposeNew.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelTopComposeNew.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanelTopComposeNew.Size = new System.Drawing.Size(707, 208);
+            this.tableLayoutPanelTopComposeNew.Size = new System.Drawing.Size(498, 213);
             this.tableLayoutPanelTopComposeNew.TabIndex = 0;
             // 
             // metroLabelSubject
@@ -184,7 +176,7 @@
             this.metroLabelSubject.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroLabelSubject.Location = new System.Drawing.Point(3, 0);
             this.metroLabelSubject.Name = "metroLabelSubject";
-            this.metroLabelSubject.Size = new System.Drawing.Size(89, 29);
+            this.metroLabelSubject.Size = new System.Drawing.Size(61, 29);
             this.metroLabelSubject.TabIndex = 0;
             this.metroLabelSubject.Text = "Subject";
             this.metroLabelSubject.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -192,10 +184,10 @@
             // metroTextBoxSubject
             // 
             this.metroTextBoxSubject.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTextBoxSubject.Location = new System.Drawing.Point(98, 3);
+            this.metroTextBoxSubject.Location = new System.Drawing.Point(70, 3);
             this.metroTextBoxSubject.Name = "metroTextBoxSubject";
             this.metroTextBoxSubject.PromptText = "Subject";
-            this.metroTextBoxSubject.Size = new System.Drawing.Size(606, 23);
+            this.metroTextBoxSubject.Size = new System.Drawing.Size(425, 23);
             this.metroTextBoxSubject.TabIndex = 1;
             // 
             // metroLabelMailTo
@@ -204,7 +196,7 @@
             this.metroLabelMailTo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroLabelMailTo.Location = new System.Drawing.Point(3, 29);
             this.metroLabelMailTo.Name = "metroLabelMailTo";
-            this.metroLabelMailTo.Size = new System.Drawing.Size(89, 29);
+            this.metroLabelMailTo.Size = new System.Drawing.Size(61, 29);
             this.metroLabelMailTo.TabIndex = 2;
             this.metroLabelMailTo.Text = "Mail To";
             this.metroLabelMailTo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -212,10 +204,10 @@
             // metroTextBoxMailTo
             // 
             this.metroTextBoxMailTo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTextBoxMailTo.Location = new System.Drawing.Point(98, 32);
+            this.metroTextBoxMailTo.Location = new System.Drawing.Point(70, 32);
             this.metroTextBoxMailTo.Name = "metroTextBoxMailTo";
             this.metroTextBoxMailTo.PromptText = "Mail To";
-            this.metroTextBoxMailTo.Size = new System.Drawing.Size(606, 23);
+            this.metroTextBoxMailTo.Size = new System.Drawing.Size(425, 23);
             this.metroTextBoxMailTo.TabIndex = 3;
             // 
             // metroLabelBccTo
@@ -224,18 +216,18 @@
             this.metroLabelBccTo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroLabelBccTo.Location = new System.Drawing.Point(3, 58);
             this.metroLabelBccTo.Name = "metroLabelBccTo";
-            this.metroLabelBccTo.Size = new System.Drawing.Size(89, 29);
+            this.metroLabelBccTo.Size = new System.Drawing.Size(61, 29);
             this.metroLabelBccTo.TabIndex = 4;
-            this.metroLabelBccTo.Text = "BCC";
+            this.metroLabelBccTo.Text = "Bcc";
             this.metroLabelBccTo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // metroTextBoxBcc
             // 
             this.metroTextBoxBcc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTextBoxBcc.Location = new System.Drawing.Point(98, 61);
+            this.metroTextBoxBcc.Location = new System.Drawing.Point(70, 61);
             this.metroTextBoxBcc.Name = "metroTextBoxBcc";
             this.metroTextBoxBcc.PromptText = "Bcc";
-            this.metroTextBoxBcc.Size = new System.Drawing.Size(606, 23);
+            this.metroTextBoxBcc.Size = new System.Drawing.Size(425, 23);
             this.metroTextBoxBcc.TabIndex = 5;
             // 
             // metroLabelCC
@@ -244,18 +236,18 @@
             this.metroLabelCC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroLabelCC.Location = new System.Drawing.Point(3, 87);
             this.metroLabelCC.Name = "metroLabelCC";
-            this.metroLabelCC.Size = new System.Drawing.Size(89, 29);
+            this.metroLabelCC.Size = new System.Drawing.Size(61, 29);
             this.metroLabelCC.TabIndex = 6;
-            this.metroLabelCC.Text = "CC";
+            this.metroLabelCC.Text = "Cc";
             this.metroLabelCC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // metroTextBoxCC
             // 
             this.metroTextBoxCC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTextBoxCC.Location = new System.Drawing.Point(98, 90);
+            this.metroTextBoxCC.Location = new System.Drawing.Point(70, 90);
             this.metroTextBoxCC.Name = "metroTextBoxCC";
             this.metroTextBoxCC.PromptText = "Cc";
-            this.metroTextBoxCC.Size = new System.Drawing.Size(606, 23);
+            this.metroTextBoxCC.Size = new System.Drawing.Size(425, 23);
             this.metroTextBoxCC.TabIndex = 7;
             // 
             // metroLabelMailFrom
@@ -264,7 +256,7 @@
             this.metroLabelMailFrom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroLabelMailFrom.Location = new System.Drawing.Point(3, 116);
             this.metroLabelMailFrom.Name = "metroLabelMailFrom";
-            this.metroLabelMailFrom.Size = new System.Drawing.Size(89, 29);
+            this.metroLabelMailFrom.Size = new System.Drawing.Size(61, 29);
             this.metroLabelMailFrom.TabIndex = 8;
             this.metroLabelMailFrom.Text = "Mail From";
             this.metroLabelMailFrom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -272,10 +264,10 @@
             // metroTextBoxMailFrom
             // 
             this.metroTextBoxMailFrom.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTextBoxMailFrom.Location = new System.Drawing.Point(98, 119);
+            this.metroTextBoxMailFrom.Location = new System.Drawing.Point(70, 119);
             this.metroTextBoxMailFrom.Name = "metroTextBoxMailFrom";
             this.metroTextBoxMailFrom.PromptText = "Mail From";
-            this.metroTextBoxMailFrom.Size = new System.Drawing.Size(606, 23);
+            this.metroTextBoxMailFrom.Size = new System.Drawing.Size(425, 23);
             this.metroTextBoxMailFrom.TabIndex = 9;
             this.metroTextBoxMailFrom.Text = "Mail From";
             // 
@@ -304,49 +296,10 @@
             this.toolStripButtonUnderline,
             this.toolStripButtonFont,
             this.toolStripButtonOrderedList});
-            this.toolStripComposeNew.Location = new System.Drawing.Point(95, 145);
+            this.toolStripComposeNew.Location = new System.Drawing.Point(67, 145);
             this.toolStripComposeNew.Name = "toolStripComposeNew";
-            this.toolStripComposeNew.Size = new System.Drawing.Size(612, 29);
+            this.toolStripComposeNew.Size = new System.Drawing.Size(431, 29);
             this.toolStripComposeNew.TabIndex = 10;
-            // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(6, 29);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 29);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 29);
-            // 
-            // richTextBoxComposeContent
-            // 
-            this.richTextBoxComposeContent.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxComposeContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBoxComposeContent.Location = new System.Drawing.Point(0, 0);
-            this.richTextBoxComposeContent.Name = "richTextBoxComposeContent";
-            this.richTextBoxComposeContent.Size = new System.Drawing.Size(707, 200);
-            this.richTextBoxComposeContent.TabIndex = 0;
-            this.richTextBoxComposeContent.Text = "";
-            // 
-            // metroTileProfile
-            // 
-            this.metroTileProfile.Location = new System.Drawing.Point(119, 14);
-            this.metroTileProfile.Name = "metroTileProfile";
-            this.metroTileProfile.Size = new System.Drawing.Size(149, 40);
-            this.metroTileProfile.TabIndex = 1;
-            this.metroTileProfile.Text = "User Name";
-            // 
-            // fontDialogComposeNew
-            // 
-            this.fontDialogComposeNew.FontMustExist = true;
-            this.fontDialogComposeNew.ShowApply = true;
-            this.fontDialogComposeNew.ShowColor = true;
             // 
             // newToolStripButton
             // 
@@ -384,6 +337,11 @@
             this.printToolStripButton.Size = new System.Drawing.Size(23, 26);
             this.printToolStripButton.Text = "&Print";
             // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(6, 29);
+            // 
             // cutToolStripButton
             // 
             this.cutToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -411,6 +369,11 @@
             this.pasteToolStripButton.Size = new System.Drawing.Size(23, 26);
             this.pasteToolStripButton.Text = "&Paste";
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 29);
+            // 
             // helpToolStripButton
             // 
             this.helpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -419,6 +382,11 @@
             this.helpToolStripButton.Name = "helpToolStripButton";
             this.helpToolStripButton.Size = new System.Drawing.Size(23, 26);
             this.helpToolStripButton.Text = "He&lp";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 29);
             // 
             // toolStripButtonLeftJustify
             // 
@@ -497,7 +465,7 @@
             this.metroButtonAttach.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroButtonAttach.Location = new System.Drawing.Point(3, 148);
             this.metroButtonAttach.Name = "metroButtonAttach";
-            this.metroButtonAttach.Size = new System.Drawing.Size(89, 23);
+            this.metroButtonAttach.Size = new System.Drawing.Size(61, 23);
             this.metroButtonAttach.TabIndex = 11;
             this.metroButtonAttach.Text = "Attach";
             // 
@@ -505,12 +473,59 @@
             // 
             this.tableLayoutPanelTopComposeNew.SetColumnSpan(this.metroTextBoxAttachments, 2);
             this.metroTextBoxAttachments.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTextBoxAttachments.Location = new System.Drawing.Point(12, 181);
+            this.metroTextBoxAttachments.Location = new System.Drawing.Point(3, 177);
             this.metroTextBoxAttachments.Name = "metroTextBoxAttachments";
             this.metroTextBoxAttachments.PromptText = "Attachments";
-            this.metroTextBoxAttachments.Size = new System.Drawing.Size(75, 23);
+            this.metroTextBoxAttachments.Size = new System.Drawing.Size(492, 33);
             this.metroTextBoxAttachments.TabIndex = 12;
             this.metroTextBoxAttachments.Text = "Attachments";
+            // 
+            // richTextBoxComposeContent
+            // 
+            this.richTextBoxComposeContent.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.richTextBoxComposeContent.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxComposeContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBoxComposeContent.Location = new System.Drawing.Point(0, 0);
+            this.richTextBoxComposeContent.Name = "richTextBoxComposeContent";
+            this.richTextBoxComposeContent.Size = new System.Drawing.Size(498, 109);
+            this.richTextBoxComposeContent.TabIndex = 0;
+            this.richTextBoxComposeContent.Text = "Compose Body";
+            // 
+            // metroTabPageFolders
+            // 
+            this.metroTabPageFolders.Controls.Add(this.tableLayoutPanelFolders);
+            this.metroTabPageFolders.HorizontalScrollbarBarColor = true;
+            this.metroTabPageFolders.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPageFolders.Name = "metroTabPageFolders";
+            this.metroTabPageFolders.Size = new System.Drawing.Size(431, 358);
+            this.metroTabPageFolders.TabIndex = 1;
+            this.metroTabPageFolders.Text = "Folders";
+            this.metroTabPageFolders.ToolTipText = "Inbox";
+            this.metroTabPageFolders.VerticalScrollbarBarColor = true;
+            // 
+            // metroTabPageProfile
+            // 
+            this.metroTabPageProfile.HorizontalScrollbarBarColor = true;
+            this.metroTabPageProfile.Location = new System.Drawing.Point(4, 35);
+            this.metroTabPageProfile.Name = "metroTabPageProfile";
+            this.metroTabPageProfile.Size = new System.Drawing.Size(707, 412);
+            this.metroTabPageProfile.TabIndex = 2;
+            this.metroTabPageProfile.Text = "Profile";
+            this.metroTabPageProfile.VerticalScrollbarBarColor = true;
+            // 
+            // metroTileProfile
+            // 
+            this.metroTileProfile.Location = new System.Drawing.Point(119, 14);
+            this.metroTileProfile.Name = "metroTileProfile";
+            this.metroTileProfile.Size = new System.Drawing.Size(149, 40);
+            this.metroTileProfile.TabIndex = 1;
+            this.metroTileProfile.Text = "User Name";
+            // 
+            // fontDialogComposeNew
+            // 
+            this.fontDialogComposeNew.FontMustExist = true;
+            this.fontDialogComposeNew.ShowApply = true;
+            this.fontDialogComposeNew.ShowColor = true;
             // 
             // openFileDialogAttachments
             // 
@@ -520,11 +535,121 @@
             // 
             this.printDialogUnderComposeNew.UseEXDialog = true;
             // 
+            // tableLayoutPanelFolders
+            // 
+            this.tableLayoutPanelFolders.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanelFolders.ColumnCount = 3;
+            this.tableLayoutPanelFolders.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12F));
+            this.tableLayoutPanelFolders.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanelFolders.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53F));
+            this.tableLayoutPanelFolders.Controls.Add(this.checkedListBoxFolderContent, 1, 0);
+            this.tableLayoutPanelFolders.Controls.Add(this.webBrowserMailContent, 2, 0);
+            this.tableLayoutPanelFolders.Controls.Add(this.tableLayoutPanelSidePan, 0, 0);
+            this.tableLayoutPanelFolders.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelFolders.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanelFolders.Name = "tableLayoutPanelFolders";
+            this.tableLayoutPanelFolders.RowCount = 1;
+            this.tableLayoutPanelFolders.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelFolders.Size = new System.Drawing.Size(431, 358);
+            this.tableLayoutPanelFolders.TabIndex = 2;
+            // 
+            // checkedListBoxFolderContent
+            // 
+            this.checkedListBoxFolderContent.BackColor = System.Drawing.Color.White;
+            this.checkedListBoxFolderContent.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBoxFolderContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkedListBoxFolderContent.FormattingEnabled = true;
+            this.checkedListBoxFolderContent.Items.AddRange(new object[] {
+            "Emails"});
+            this.checkedListBoxFolderContent.Location = new System.Drawing.Point(54, 3);
+            this.checkedListBoxFolderContent.Name = "checkedListBoxFolderContent";
+            this.checkedListBoxFolderContent.Size = new System.Drawing.Size(144, 352);
+            this.checkedListBoxFolderContent.TabIndex = 1;
+            // 
+            // webBrowserMailContent
+            // 
+            this.webBrowserMailContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowserMailContent.Location = new System.Drawing.Point(204, 3);
+            this.webBrowserMailContent.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowserMailContent.Name = "webBrowserMailContent";
+            this.webBrowserMailContent.Size = new System.Drawing.Size(224, 352);
+            this.webBrowserMailContent.TabIndex = 2;
+            // 
+            // tableLayoutPanelSidePan
+            // 
+            this.tableLayoutPanelSidePan.ColumnCount = 1;
+            this.tableLayoutPanelSidePan.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelSidePan.Controls.Add(this.metroLabelFolder, 0, 0);
+            this.tableLayoutPanelSidePan.Controls.Add(this.metroComboBoxFolder, 0, 1);
+            this.tableLayoutPanelSidePan.Controls.Add(this.metroLabelFetchCount, 0, 2);
+            this.tableLayoutPanelSidePan.Controls.Add(this.metroComboBoxShowCount, 0, 3);
+            this.tableLayoutPanelSidePan.Controls.Add(this.metroButtonFolderRefresh, 0, 4);
+            this.tableLayoutPanelSidePan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelSidePan.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanelSidePan.Name = "tableLayoutPanelSidePan";
+            this.tableLayoutPanelSidePan.RowCount = 5;
+            this.tableLayoutPanelSidePan.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelSidePan.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelSidePan.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelSidePan.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelSidePan.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelSidePan.Size = new System.Drawing.Size(45, 352);
+            this.tableLayoutPanelSidePan.TabIndex = 3;
+            // 
+            // metroLabelFolder
+            // 
+            this.metroLabelFolder.AutoSize = true;
+            this.metroLabelFolder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLabelFolder.Location = new System.Drawing.Point(3, 0);
+            this.metroLabelFolder.Name = "metroLabelFolder";
+            this.metroLabelFolder.Size = new System.Drawing.Size(39, 19);
+            this.metroLabelFolder.TabIndex = 0;
+            this.metroLabelFolder.Text = "Folder";
+            this.metroLabelFolder.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // metroComboBoxFolder
+            // 
+            this.metroComboBoxFolder.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroComboBoxFolder.FormattingEnabled = true;
+            this.metroComboBoxFolder.ItemHeight = 23;
+            this.metroComboBoxFolder.Location = new System.Drawing.Point(3, 22);
+            this.metroComboBoxFolder.Name = "metroComboBoxFolder";
+            this.metroComboBoxFolder.Size = new System.Drawing.Size(39, 29);
+            this.metroComboBoxFolder.TabIndex = 1;
+            // 
+            // metroLabelFetchCount
+            // 
+            this.metroLabelFetchCount.AutoSize = true;
+            this.metroLabelFetchCount.Location = new System.Drawing.Point(3, 54);
+            this.metroLabelFetchCount.Name = "metroLabelFetchCount";
+            this.metroLabelFetchCount.Size = new System.Drawing.Size(39, 19);
+            this.metroLabelFetchCount.TabIndex = 2;
+            this.metroLabelFetchCount.Text = "Show";
+            // 
+            // metroComboBoxShowCount
+            // 
+            this.metroComboBoxShowCount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroComboBoxShowCount.FormattingEnabled = true;
+            this.metroComboBoxShowCount.ItemHeight = 23;
+            this.metroComboBoxShowCount.Location = new System.Drawing.Point(3, 76);
+            this.metroComboBoxShowCount.Name = "metroComboBoxShowCount";
+            this.metroComboBoxShowCount.Size = new System.Drawing.Size(39, 29);
+            this.metroComboBoxShowCount.TabIndex = 3;
+            // 
+            // metroButtonFolderRefresh
+            // 
+            this.metroButtonFolderRefresh.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.metroButtonFolderRefresh.Location = new System.Drawing.Point(3, 326);
+            this.metroButtonFolderRefresh.Name = "metroButtonFolderRefresh";
+            this.metroButtonFolderRefresh.Size = new System.Drawing.Size(39, 23);
+            this.metroButtonFolderRefresh.TabIndex = 4;
+            this.metroButtonFolderRefresh.Text = "Refresh";
+            // 
             // bench
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 531);
+            this.ClientSize = new System.Drawing.Size(479, 477);
             this.Controls.Add(this.metroTileProfile);
             this.Controls.Add(this.metroTabControlMClinet);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -532,6 +657,7 @@
             this.Name = "bench";
             this.Text = "MClient";
             this.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.metroTabControlMClinet.ResumeLayout(false);
             this.metroTabPageCompose.ResumeLayout(false);
             this.splitContainerComposeNew.Panel1.ResumeLayout(false);
@@ -542,6 +668,10 @@
             this.tableLayoutPanelTopComposeNew.PerformLayout();
             this.toolStripComposeNew.ResumeLayout(false);
             this.toolStripComposeNew.PerformLayout();
+            this.metroTabPageFolders.ResumeLayout(false);
+            this.tableLayoutPanelFolders.ResumeLayout(false);
+            this.tableLayoutPanelSidePan.ResumeLayout(false);
+            this.tableLayoutPanelSidePan.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -550,7 +680,7 @@
 
         private MetroFramework.Controls.MetroTabControl metroTabControlMClinet;
         private MetroFramework.Controls.MetroTabPage metroTabPageCompose;
-        private MetroFramework.Controls.MetroTabPage metroTabPageInbox;
+        private MetroFramework.Controls.MetroTabPage metroTabPageFolders;
         private MetroFramework.Controls.MetroTabPage metroTabPageProfile;
         private System.Windows.Forms.SplitContainer splitContainerComposeNew;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelTopComposeNew;
@@ -591,6 +721,15 @@
         private MetroFramework.Controls.MetroTextBox metroTextBoxAttachments;
         private System.Windows.Forms.OpenFileDialog openFileDialogAttachments;
         private System.Windows.Forms.PrintDialog printDialogUnderComposeNew;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelFolders;
+        private System.Windows.Forms.CheckedListBox checkedListBoxFolderContent;
+        private System.Windows.Forms.WebBrowser webBrowserMailContent;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelSidePan;
+        private MetroFramework.Controls.MetroLabel metroLabelFolder;
+        private MetroFramework.Controls.MetroComboBox metroComboBoxFolder;
+        private MetroFramework.Controls.MetroLabel metroLabelFetchCount;
+        private MetroFramework.Controls.MetroComboBox metroComboBoxShowCount;
+        private MetroFramework.Controls.MetroButton metroButtonFolderRefresh;
 
     }
 }
